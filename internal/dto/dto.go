@@ -15,3 +15,11 @@ type GetJwtInput struct {
 	Email    string `json:"email"`
 	Password string `json:"password"`
 }
+
+type GetJwtOutput struct {
+	Access_token string `json:"access_token"`
+}
+
+type Error struct {
+	Message string `json:"message"`
+}
